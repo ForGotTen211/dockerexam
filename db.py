@@ -1,5 +1,5 @@
 from sqlmodel import create_engine, Session, SQLModel
-from dockerexam.config import settings
+from config import settings
 
 engine = create_engine(settings.DATABASE_URL)
 
