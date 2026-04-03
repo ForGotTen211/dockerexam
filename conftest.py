@@ -1,8 +1,8 @@
 import pytest
 from fastapi.testclient import TestClient
 from sqlmodel import Session, SQLModel, create_engine, StaticPool
-from dockerexam.main import app
-from dockerexam.db import get_session
+from main import app
+from db import get_session
 
 # Используем SQLite в памяти для тестов для скорости и изоляции
 DATABASE_URL = "sqlite://"

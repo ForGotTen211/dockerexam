@@ -1,6 +1,6 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
-from dockerexam.db import init_db
+from db import init_db
 from routers import books
 
 @asynccontextmanager

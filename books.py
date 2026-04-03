@@ -1,8 +1,8 @@
 from typing import List
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlmodel import Session, select
-from dockerexam.db import get_session
-from dockerexam.models import Book, BookCreate, BookUpdate, BookRead
+from db import get_session
+from models import Book, BookCreate, BookUpdate, BookRead
 
 router = APIRouter(prefix="/books", tags=["books"])
 
